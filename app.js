@@ -5,7 +5,7 @@ app.controller('MainController', function($scope, AngularGit){
 	console.log(AngularGit.get(params))
 });
 
-angular.module('app', ['angularGit'])
+angular.module('angularGit', ['ngResource'])
 	.factory('AngularGit', function($resource){
 		return $resource('https://api.github.com/repos/angular/angular.js/:category/:sha')
 	})
