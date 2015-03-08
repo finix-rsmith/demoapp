@@ -8,5 +8,5 @@ app.controller('MainController', function($scope, AngularGit){
 
 angular.module('angularGit', ['ngResource'])
 	.factory('AngularGit', function($resource){
-		return $resource('json/:file.json')
+		return $resource('json/')
 	})
