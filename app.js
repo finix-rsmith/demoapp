@@ -1,7 +1,7 @@
 angular.module("appDemo", ["app.angularGit"])
 	.controller("MainController", function($scope, AngularGit){
 		var params = {folder: "products"};
-		var params2 = {folder: "products", product: "brand"};
+		var params2 = {folder: "products", product: "brand.json"};
 		console.log(AngularGit.query(params))
 		console.log(AngularGit.get(params2))
 	});
