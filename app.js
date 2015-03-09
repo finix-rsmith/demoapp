@@ -6,5 +6,5 @@ angular.module("appDemo", ["app.angularGit"])
 
 angular.module("app.angularGit", ["ngResource"])
 	.factory("AngularGit", function($resource){
-		return $resource(":folder/:file.json")
+		return $resource("http://finix-rsmith.github.io/demoapp/:folder/:file.json")
 	})
